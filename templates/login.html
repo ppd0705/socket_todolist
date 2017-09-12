@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dreamer-login </title>
+     <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
+     <style>
+        .md {
+            margin-top: 100px;
+            text-align: center;
+        }
+        .button-success{
+            background: #80bd01;
+            border-radius: 4px;
+        }
+         .top {
+             margin-top: 3%;
+             margin-left: 95%;
+         }
+         .top-a {
+             color: black;
+             font-size: 18px;
+         }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <a href="/register" class="top-a">注册</a>
+    </div>
+    <div class="md">
+         <h1>Hello Dreamer</h1>
+        <form action="/login" method="post" class="pure-form ">
+            <br>
+            <input type="text" name="username" placeholder="请输入用户名" class="pure-input-1-4">
+            <br>
+            <br>
+            <input type="text" name="password" placeholder="请输入密码" class="pure-input-1-4">
+            <br>
+            <br>
+            <button type="submit"  class="button-success pure-button  pure-input-1-4 pure-button-primary">登录</button>
+        </form>
+    </div>
+
+</body>
+</html>

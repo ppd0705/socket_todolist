@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dreamer-Todo list</title>
+    <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
+    <style>
+        .top {
+            margin-top: 3%;
+            margin-left: 95%;
+
+        }
+
+        .top-a {
+            color: black;
+            font-size: 18px;
+        }
+
+        .md {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #todo-list {
+            margin: 0 auto;
+        }
+
+        .click-a {
+            text-decoration: underline;
+            color: #80bd01;
+        }
+
+        th {
+            margin: 0 auto !important;
+            text-align: center;
+        }
+
+        tr {
+            border-bottom: 1px solid #dfe2c3;
+        }
+
+        .button-success {
+            background: #80bd01;
+            border-radius: 4px;
+        }
+
+        .hello {
+            color: black;
+            font-size: 26px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <a href="/logout" class="top-a">退出</a>
+</div>
+
+<div class="md">
+    <div class="hello">
+        Hello Dreamer <a style="color: #2d9fff"> {{u.username}}</a>
+    </div>
+    <br>
+    <div class="pure-form ">
+        <input id='id-input-todo' data-id="{{ u.id }}" class="pure-input-1-4">
+        <button id='id-button-add' class="button-success pure-button">添加</button>
+    </div>
+    <br>
+    <!--<table id="todo-list" class="todo-table pure-table  pure-table-horizontal pure-table-striped">-->
+    <table id="todo-list" class="todo-table pure-table  pure-table-horizontal">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>任务</th>
+            <th>创建时间</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="todo-list">
+
+        </tbody>
+    </table>
+</div>
+<script src='/static?file=js/ajax.js'></script>
+<script src='/static?file=js/todo.js'></script>
+</body>
+</html>
