@@ -26,7 +26,7 @@ Socket_Todolist
 ![image](https://github.com/ppd0705/socket_todolist/blob/master/static/screenshot/preindex.png)
 
 
-+  主页(利用局部更新页面）：
++  主页(利用Ajax局部更新页面）：
 
 ![image](https://github.com/ppd0705/socket_todolist/blob/master/static/screenshot/index.png)
 
