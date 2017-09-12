@@ -41,9 +41,6 @@ def run(host, port):
         print('开始监听 {}：{}'.format(host, port))
         while True:
             conn, addr = s.accept()
-            # _thread.start_new_thread(process_request, (conn,))
-
-            # 单线程
             process_request(conn)
 
 
