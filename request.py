@@ -55,6 +55,5 @@ class Request(object):
                 self.cookies[k] = v
 
     def get_json(self):
-        if self.body:
-            return json.loads(self.body)
+        return json.loads(self.body)
 

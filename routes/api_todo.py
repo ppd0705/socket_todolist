@@ -1,4 +1,4 @@
-from models import Todo, User
+from models import Todo
 from routes import json_response
 
 
@@ -12,7 +12,6 @@ def add(request):
     form = request.get_json()
     t = Todo.new(**form)
     return json_response(t.json())
-
 
 
 def delete(request):
